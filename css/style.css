@@ -1,0 +1,22 @@
+body {
+	background-color: white;
+	margin: 0;
+	padding: 60px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	padding-left: 30px;
+}
+
+/*font 
+@font-face {
+	font-family: 'SF-TransRobotics';
+	src: url('http://www.dafont.com/sf-transrobotics.ttf') format('truetype');
+}
+*/
