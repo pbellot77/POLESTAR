@@ -10,8 +10,10 @@ img {
 	margin-right: auto;
 }
 
-#footer {
+.footer {
+	color: white;
 	padding-left: 30px;
+	background-color: #63a7f7;
 }
 
 /*font 
