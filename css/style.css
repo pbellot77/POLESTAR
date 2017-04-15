@@ -4,6 +4,10 @@ body {
 	padding: 0px;
 }
 
+.form-group {
+	align: center;
+}
+
 img {
 	display: block;
 	margin-left: auto;
