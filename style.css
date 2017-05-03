@@ -69,3 +69,12 @@ p {
 #footer a {
 	font-size: 30px;
 }
+
+#form {
+	font-family: 'Orbitron', sans-serif;
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+	background-color: #64a7f7;
+	display: none;
+}

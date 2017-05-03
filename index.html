@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -21,8 +22,32 @@
 			<h1>Polestar.tv</h1>
 			<p>The Home for Streaming Interactive Gaming Videos</p>
 			<p>
-			<a href="#" class="btn btn-primary btn-lg">SignUp</a>
+			<button id="onClick" class="btn btn-primary btn-lg">SignUp</button>
 			</p>
+		</div>
+
+		<div id="form">
+			<form action="https://formspree.io/patrick@polestar.tv" method="POST">
+				<div class="form-group row">
+					<label for="inputName" class="col-sm-2 col-form-label">Name</label>
+					<div class="col-sm-8">
+						<input type="name" class="form-control" id="inputName" name="name" placeholder="Your Name">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Your Email">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="messageArea" class="col-sm-2 col-form-label">Message</label>
+					<div class="col-sm-8">
+						<textarea class="form-control" id="messageArea" name="message" placeholder="What would you like to see?" rows="3"></textarea>
+					</div>
+				</div>
+				<input type="submit" value="Send" class="btn btn-primary">
+			</form>
 		</div>
 
 		<div class="container">
@@ -59,7 +84,8 @@
 		</div>
 
 		<div id="date">
-			<p>Coming Late 2017-Early 2018</p>
+			<p>Coming Late 2017-Early 2018</p> <br>
+			<p>Sign Up for Updates</p>
 		</div>
 
 	<div id="footer">
@@ -72,7 +98,14 @@
 			<li><a href="https://github.com/PolestarInteractiveLLC"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
 		</ul>
 	</div>
-
+	
+	<script>
+		$( "#onClick" ).click(function() {
+			$( "#form" ).fadeIn( "fast", function() {
+				//Animation complete
+			});
+		});
+	</script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
